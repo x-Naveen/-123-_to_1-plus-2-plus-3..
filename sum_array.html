@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body style="background:darkblue;color:white">
+<p>convert "123456789" to 1+2+3+4+5+6+7+8+9 = 45 </p>
+<p>Click the button to convert the string into numbers and get the sum of the all numbers in the array.</p>
+<button onclick="myFunction1()">click</button>
+<p>String before: <span id="demo"></span></p>
+
+
+<p id="demo1"></p>
+
+<script>
+
+var str = "123456789";
+ 
+	 
+	   
+	   document.getElementById("demo").innerHTML = str; 
+	  
+	  <!-- document.getElementById("demo").innerHTML = " "+numbers; -->
+ 
+
+function myFunction1() {
+
+	
+
+var x = str.split('');
+var sum = 0;
+
+for (var i = 0; i< x.length; i++){
+var a = x[i];
+
+a = parseInt(a);
+
+sum = sum + a;
+
+}
+
+document.getElementById("demo").innerHTML = sum ;
+ 
+}
+
+
+
+
+</script>
+
+</body>
+</html>
